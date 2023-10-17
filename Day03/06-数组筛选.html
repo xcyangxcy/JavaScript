@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let arr = [2, 15, 4, 6, 8, 10, 12, 14, 16, 18]
+    // 声明新数组来存放对应元素
+    let newArr = []
+    for (let index = 0; index < arr.length; index++) {
+      // 筛选条件
+      if (arr[index] >= 10) {
+        // 将元素放进新数组中
+        newArr.push(arr[index])
+      }
+    }
+    console.log(newArr);
+  </script>
+</body>
+
+</html>

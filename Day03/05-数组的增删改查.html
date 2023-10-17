@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 数组的修改操作
+    // arr[i] = 内容
+    let arr = ['pink', 'red', 'green']
+    for (let index = 0; index < arr.length; index++) {
+      arr[index] = arr[index] + '颜色'
+    }
+    console.log(arr)
+    // 数组的增加操作
+    // .push 在数组的末尾添加元素
+    // 若输出arr1.push，返回的值是数组的长度
+    let arr1 = ['上海', '北京']
+    arr1.push('河南')
+    // .unshift 在数组的开头添加元素
+    // arr1.unshift 输出的返回值也是数组的长度
+    arr1.unshift('浙江')
+    console.log(arr1)
+    // 数组的删除操作
+    // .pop 删除数组的最后一个元素，返回值这个元素
+    arr1.pop()
+    // .shift 删除开头元素
+    arr1.shift()
+    // 删除指定元素，.splice(起始位置，删除几个元素(默认是从起始位置到最后))
+    arr.splice(1, 1) // 从索引位置1开始，删除一个元素。的删除arr中的red颜色
+  </script>
+</body>
+
+</html>

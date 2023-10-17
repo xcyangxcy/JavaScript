@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 形参为一个空数组，等待传入实参
+    function getArrVaule(arr = []) {
+      let max = arr[0]
+      let min = arr[0]
+      // 遍历数组找到最大值
+      for (let i = 1; i < arr.length; i++) {
+        if (max < arr[i]) {
+          max = arr[i]
+        }
+        if (min > arr[i]) {
+          min = arr[i]
+        }
+      }
+      // 函数返回max，等待后续使用
+      return [max, min]
+    }
+
+    let newArr = getArrVaule([1, 3, 5, 7, 9])
+    console.log(`数组的最大值是：${newArr[0]}`)
+    console.log(`数组的最小值是：${newArr[1]}`)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1、函数表达式
+    // let fn = function (x, y) {
+    //   console.log(x + y)
+    // }
+    // // 调用方式是变量名+（）
+    // // 匿名函数只能在函数后调用(与变量相似)
+    // fn(1, 2)
+
+    // 2、立即执行函数
+    // 避免全局变量的污染
+    (function (x, y) {
+      console.log(x + y)
+    })(3, 54); // 直接调用函数，括号内写实参
+    // 立即执行函数结束时必须加分号
+
+  </script>
+</body>
+
+</html>

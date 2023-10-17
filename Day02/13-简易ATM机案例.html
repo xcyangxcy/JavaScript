@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let money = 100
+    while (1) {
+      let ope = +prompt(`
+      请选择您要进行的操作：
+      1、存钱
+      2、取钱
+      3、查看余额
+      4、退出
+      `)
+      if (ope === 4) {
+        break
+      }
+      switch (ope) {
+        case 1:
+          let cun = +prompt('请输入您要存入的金额')
+          money += cun
+          break
+        case 2:
+          let qu = +prompt('请输入您要取出的金额')
+          if (qu > money) {
+            alert('您的余额不足！')
+          }
+          else {
+            money -= qu
+          }
+          break
+        case 3:
+          alert(`您的余额为${money}`)
+      }
+    }
+
+  </script>
+</body>
+
+</html>
