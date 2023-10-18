@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1、声明对象 let 对象名 = {}
+    // 对象由属性和方法组成，每个属性之间用逗号隔开
+    // 属性只能被对象使用
+    let my = {
+      uname: 'xcy',
+      age: 21,
+      gender: '男'
+    }
+    // console.log(my)
+    let obj = {
+      uname: '小米10 青春版',
+      brand: '小米(MI)',
+      number: '1000012816024',
+      weight: '0.55kg',
+      address: '中国大陆'
+    }
+    // console.log(obj)
+
+    // 对象的使用(增删改查)
+    // 1、查找 对象.属性或对象名['属性名']
+    console.log(obj.uname)
+    // 2、修改、增加 语法都是：对象.属性名 = 新值
+    my.age = 18
+    my.hobby = '足球'
+    console.log(my.age)
+    console.log(my)
+    // 3、删除 delete obj.属性
+  </script>
+</body>
+
+</html>
