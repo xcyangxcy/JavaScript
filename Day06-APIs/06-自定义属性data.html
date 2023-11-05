@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="1" data-id="1" data-spm="啊？"></div>
+  <div class="2"></div>
+  <script>
+    const one = document.querySelector('div')
+    // 对象.dataset获取所有自定义属性
+    // 对象.dataset.属性名，获取指定自定义属性
+    console.log(one.dataset.id);
+    console.log(one.dataset.spm);
+  </script>
+</body>
+
+</html>

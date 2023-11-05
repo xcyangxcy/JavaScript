@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <input type="text" value="电脑"> -->
+  <input type="checkbox" name="" id="" checked>
+  <button>点击</button>
+  <script>
+    // const ipt = document.querySelector('input')
+    // 获取设置表单值
+    // ipt.value = '我的电脑'
+    // ipt.type = 'password'
+    const check = document.querySelector('input')
+    check.chedked = true // checked 只接受布尔值 true 表示自动选中
+    const btn = document.querySelector('button')
+    btn.disabled = true // disabled 只接受布尔值，默认为flase不禁用按钮
+  </script>
+</body>
+
+</html>

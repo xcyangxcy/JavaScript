@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box1">我是文字内容</div>
+  <div class="box2">我是文字内容</div>
+  <script>
+    // .innerText 修改内容 无法识别HTML标签
+    // 获取对象
+    const box1 = document.querySelector('.box1')
+    box1.innerText = '我是一个盒子'
+    console.log(box1)
+    // .innerHTML 修改内容 可以识别标签
+    // 获取对象
+    const box2 = document.querySelector('.box2')
+    box2.innerHTML = '<strong>我也是一个盒子</strong>' // .innerHTML可以识别标签
+    console.log(box2)
+  </script>
+</body>
+
+</html>

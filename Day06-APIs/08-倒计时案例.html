@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <textarea name="" id="" cols="30" rows="10">
+    在您成为中华人民共和国中央人民政府门户网站/国务院客户端（简称“中国政府网”/“国务院客户端”）实名注册用户（简称“注册用户”）之前，请确认您已充分阅读、理解并接受本协议的全部内容，同意遵循本协议的所有约定。如您不同意本服务协议及或随时对其的补充和修改，您可以主动停止使用中国政府网/国务院客户端提供的服务；您一旦使用，即视为您已了解并完全同意本服务协议各项内容，包括中国政府网/国务院客户端对本协议随时所做的任何补充和修改。
+  </textarea>
+  <br>
+  <button>我已阅读用户协议(5)</button>
+
+  <script>
+    const btn = document.querySelector('button')
+    btn.disabled = true
+    let i = 5
+    let n = setInterval(function () {
+      i--
+      btn.innerHTML = `我已阅读用户协议(${i})`
+      if (i === 0) {
+        clearInterval(n)
+        btn.disabled = false
+        btn.innerHTML = '我同意用户协议'
+      }
+    }, 1000)
+  </script>
+</body>
+
+</html>

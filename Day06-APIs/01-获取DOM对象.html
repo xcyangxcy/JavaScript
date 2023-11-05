@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <ul>
+    <li>我的首页</li>
+    <li>产品介绍</li>
+    <li>联系方式</li>
+  </ul>
+  <script>
+    // 1、获取匹配到的第一个元素对象
+    const box = document.querySelector('.box')
+    console.log(box)
+    // const li = document.querySelector('ul li')
+    const li = document.querySelector('ul li:first-child')
+    console.log(li)
+    // 2、选取多个对象
+    const lis = document.querySelectorAll('ul li')
+    console.log(lis)
+    // 若要获取数组中的每一个对象需要遍历
+    for (let i = 0; i < lis.length; i++) {
+      console.log(lis[i]);
+    }
+  </script>
+</body>
+
+</html>
