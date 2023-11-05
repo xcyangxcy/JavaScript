@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="https://www.bilibili.com/">已完成注册，5秒后自动跳转</a>
+  <script>
+    // 要求：打开页面后，显示倒计时。倒计时结束时自动跳转页面
+    const a = document.querySelector('a')
+    let num = 5
+    // 定时器
+    let timerId = setInterval(function () {
+      num--
+      a.innerHTML = `已完成注册，${num}秒后自动跳转`
+      if (num === 0) {
+        clearInterval(timerId)
+        location.href = 'https://www.bilibili.com/'
+      }
+    }, 1000)
+
+  </script>
+</body>
+
+</html>
